@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
-    // configuration parameters
+    // Configuration Parameters
     [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
@@ -23,7 +23,6 @@ public class Player : MonoBehaviour {
     [SerializeField] AudioClip shootSound;
     [SerializeField] [Range(0, 1)] float shootVolume = 100f;
 
-
     Coroutine firingCoroutine;
 
     float xMin;
@@ -31,19 +30,15 @@ public class Player : MonoBehaviour {
     float yMin;
     float yMax;
 
-    // Use this for initialization
     void Start ()
     {
         SetUpMoveBoundaries();	
 	}
 
-
-    // Update is called once per frame
     void Update ()
     {
         Move();
-        Fire();
-		
+        Fire();	
 	}
 
     private void Fire()

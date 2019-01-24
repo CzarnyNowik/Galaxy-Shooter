@@ -8,7 +8,6 @@ public class SceneLoader : MonoBehaviour {
     [SerializeField] float delayInSeconds = 2f;
 
 public void LoadGameScene()
-
     {
         SceneManager.LoadScene("Game");
         FindObjectOfType<GameSession>().ResetGame();

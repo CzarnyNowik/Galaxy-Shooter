@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour {
 
-	// Use this for initialization
 	void Awake ()
     {
         SetUpSingleton();
@@ -22,9 +21,4 @@ public class MusicPlayer : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
 }

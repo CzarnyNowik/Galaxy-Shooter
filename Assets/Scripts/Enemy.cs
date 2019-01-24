@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+    // Configuration Parameters
     [Header("Enemy Stats")]
     [SerializeField] float health = 100;
     [SerializeField] int enemyScore = 50;
@@ -22,13 +24,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip shootSound;
     [SerializeField] [Range(0, 1)] float shootVolume = 100f;
 
-    // Use this for initialization
     void Start()
     {
         shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
-    // Update is called once per frame
     void Update()
     {
         CountDownAndShoot();
@@ -78,6 +78,5 @@ public class Enemy : MonoBehaviour
         GameObject explosion = Instantiate(vfxPrefab, transform.position, transform.rotation);
         Destroy(explosion, 1f);
         AudioSource.PlayClipAtPoint(explosionSound, Camera.main.transform.position,volume);
-
     }
 }

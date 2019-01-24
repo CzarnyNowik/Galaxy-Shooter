@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 
+    // Cpnfiguration parameters
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0;
     [SerializeField] bool looping = false;
 
-	// Use this for initialization
 	IEnumerator Start() 
     {
         do

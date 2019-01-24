@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class WaveConfig : ScriptableObject {
 
+    // Configuration Parameters
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] GameObject pathPrefab;
     [SerializeField] float timeBetweenSpawns = 0.5f;
@@ -26,13 +27,7 @@ public class WaveConfig : ScriptableObject {
     }
 
     public float GetTimeBetweenSpawns() {return timeBetweenSpawns;}
-
     public float GetSpawnRandomFactor() {return spawnRandomFactor;}
-
     public int GetNumberOfEnemies() {return numberOfEnemies;}
-
     public float GetMoveSpeed() {return moveSpeed;}
-
-
-
 }
