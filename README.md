@@ -7,3 +7,4 @@ TO DO LIST:
 -add power ups dropped from enemies
 -add 3x helath system
 -add bosses?
+-add highscore table
